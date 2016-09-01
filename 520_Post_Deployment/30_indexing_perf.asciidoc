@@ -168,7 +168,7 @@ a large import, you can disable refreshes by setting this value to `-1` for the
 duration of the import.  Don't forget to reenable it when you are finished!
 
 - If you are doing a large bulk import, consider disabling replicas by setting
-`index.number_of_replicas: 0`.((("replicas, disabling during large bulk imports")))  When documents are replicated, the entire document
+`index.number_of_replicas: 0`.((("replicas, disabling during large bulk imports")))  When documents are indexed, the entire document
 is sent to the replica node and the indexing process is repeated verbatim.  This
 means each replica will perform the analysis, indexing, and potentially merging
 process.
